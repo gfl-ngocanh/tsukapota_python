@@ -1,0 +1,88 @@
+
+
+.frame {
+	position: absolute;
+	height: 250px; 
+	width: 300px; 
+    margin-left: 7%;
+}
+
+.test-ads-logo {
+	background-color: #000000;
+	position: absolute;
+	top: 1px;
+  	left: 1px;
+}
+
+.text-wraper {
+	text-align: center !important;
+	position: absolute;
+	/*top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	top: 90px;
+	left: 50px;
+	right: 35px;
+	font-size: 15px;
+	color: #000;
+	margin: 0px;
+	opacity: 100% !important;
+	background-color: #ffffffe0;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: 400;
+}
+
+.text-wraper p {
+	margin: 0px;
+}
+
+.under-bar {
+	position: absolute;
+	display: flex;
+	width: 300px;
+	height: 50px;
+	top: 200px;
+	background-color: #ffc107;
+}
+.overal {
+	width: 65%;
+}
+.link {
+	text-align: center;
+	height: fit-content;
+	margin-top: 6px;
+	margin-left: 9px;
+	width: 30%;
+	border: 1px solid gray;
+	padding: 5px;
+	border-radius: 20px;
+	background-color: #fff;
+}
+
+.frame {
+	z-index: 3;
+  animation: slideshow 12s linear 0s infinite;
+}
+
+.frame-1 {
+	background-image: url("../image/ads-bg.jpg") !important;
+}
+.frame-2 {
+	background-image: url("../image/sunshine.jpg") !important;
+  	z-index: 2;
+  	animation-delay: 4s;
+}
+
+.frame-3 {
+	background-image: url("../image/bathroom.jpg") !important;
+  	z-index: 1;
+  	animation-delay: 8s;
+}
+
+@keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}

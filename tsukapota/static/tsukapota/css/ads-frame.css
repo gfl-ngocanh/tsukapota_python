@@ -1,0 +1,332 @@
+#wrapper {
+  width: 300px;
+  /*margin: 50px auto;*/
+  height: 250px;
+  margin-left: 7%;
+  border: 1px solid gray;
+}
+
+.chat ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.message-left .message-time {
+  display: block;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 4px;
+  color: #ccc;
+  font-family: Courier;
+}
+
+.message-right .message-time {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 4px;
+  color: #ccc;
+  font-family: Courier;
+}
+
+.message-left {
+  text-align: left;
+  /*margin-bottom: 16px;*/
+}
+
+.message-left .message-bubble {
+  max-width: 65%;
+  display: inline-block;
+  background: #fff;
+  padding: 15px;
+  font-size: 14px;
+  color: #000;
+  border-radius: 10px;
+  font-weight: 100;
+  line-height: 1.5em;
+  margin-left: 35px;
+  position: relative;
+}
+
+.message-left .message-bubble:after {
+  content: '';
+  position: absolute;
+  left: 26;
+  top: 19;
+  width: 0;
+  height: 0;
+  border: 19px solid transparent;
+  border-right-color: #fff;
+  border-left: 0;
+  border-top: 0;
+  margin-top: -18.5px;
+  margin-left: -37px;
+  transform: rotate(30deg);
+}
+/*.mszoom  .message-bubble{
+  animation: zoominoutsinglefeatured 1s forwards;
+}*/
+
+
+.message-left .message-text{
+  position: relative;
+}
+
+
+.message-right {
+  text-align: right;
+  /*margin-bottom: 16px;*/
+}
+
+.message-right .message-bubble {
+  max-width: 60%;
+  line-height: 1.5em;
+  display: inline-block;
+  background: #bef18c;
+  padding: 15px;
+  font-size: 14px;
+  color: #000;
+  border-radius: 10px;
+  line-height: 1.5em;
+  font-weight: 100;
+  text-align: left;
+  position: relative;
+}
+
+.message-right .message-bubble:after {
+  content: '';
+  position: absolute;
+  right: -8;
+  top: 19;
+  width: 0;
+  height: 0;
+  border: 19px solid transparent;
+  border-left-color: #bef18c;
+  border-right: 0;
+  border-top: 0;
+  margin-top: -18.5px;
+  margin-left: -37px;
+  transform: rotate(-20deg);
+}
+
+.chat {
+  background: url('../image/line_bg.JPG');
+}
+
+.chat-container {
+  height: 200px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.spinme-right {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  line-height: 1.25em;
+  font-weight: 100;
+  opacity: 0.5;
+  background-color: #fff;
+}
+
+.spinme-left {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #ccc;
+  border-radius: 10px;
+  line-height: 1.25em;
+  font-weight: 100;
+  opacity: 0.5;
+  background-color: #fff;
+}
+
+.spinner {
+  margin: 0;
+  width: 30px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  background: rgba(0,0,0,1);
+}
+ 
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0)
+  }
+  40% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+        right: 50px;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*button*/
+
+.action-button {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+.button-container {
+  padding: 2px;
+}
+
+.btn-square-slant {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 1.4em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
+  border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+}
+
+.btn-square-slant:before {  
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #FFF;
+}
+
+.btn-square-slant:after {  
+  content: " ";
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  width: 0;
+  height: 0;
+  border-width: 0px 6px 6px 0px;
+  border-style: solid;
+  border-color: #FFF;
+  border-bottom-color: transparent;
+}
+
+.btn-square-slant:active {
+  /*ボタンを押したとき*/
+  border:none;
+  -webkit-transform: translate(6px,6px);
+  transform: translate(6px,6px);
+}
+
+.btn-square-slant:active:after, .btn-square-slant:active:before {
+  content: none;/*ボタンを押すと線が消える*/
+}
+
+.reservation {
+  background: #e8ae22;
+  border-bottom: solid 5px #dca41d;/*ボタン色より暗めに*/
+  border-right: solid 5px #d8a11c;/*ボタン色より暗めに*/
+}
+
+/*popup*/
+
+.popup {
+  position: absolute;
+  animation: shake 0.8s both;
+  animation-iteration-count: infinite;
+  margin-left: 40px;
+    margin-top: 30px;
+}
+
+.new-mess {
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  height: 120px;
+  width: 220px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.header-bar {
+  pading: 0px;
+  margin:0px;
+  border: 1px solid gray;
+  height: 30px;
+  width: 220px;
+  color: white;
+  text-align: center;
+  background-color: #4CAF50;
+}
+.popup h4, .popup p {
+  margin: 0px;
+}
+
+.popup p {
+  padding: 30px;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  5% { transform: translate(-1px, -2px) rotate(-1deg); }
+  10% { transform: translate(-3px, 0px) rotate(1deg); }
+  /*20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }*/
+}
+
+.hidden {
+display:none;
+}

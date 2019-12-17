@@ -1,0 +1,178 @@
+// Extra small devices (portrait phones, less than 576px)
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+.container {
+	background-color: #fff;
+}
+
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3',Hiragino Kaku Gothic Pro,"メイリオ",Meiryo,Osaka,'ＭＳ Ｐゴシック',MS PGothic,sans-serif;
+	font-size: 12px;
+}
+
+.test-ads {
+	position: relative;
+	height: 250px; 
+	width: 300px; 
+	background-image: url("../image/ads-bg.jpg") !important;
+	background-color: #ffffff;
+}
+
+.test-ads-logo {
+	background-color: #000000;
+	position: absolute;
+	top: 1px;
+  	left: 1px;
+}
+
+.test-ads-overlay{
+	background-color: #000000;
+	opacity: 60%;
+	height: 195px; 
+	width: 245px;
+	position: absolute;
+	background-image:  url("../image/overlay.png");
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+p.sales-comment {
+	text-align: center !important;
+}
+
+.sales-comment {
+	position: absolute;
+	/*top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	top: 50px;
+	left: 45px;
+	right: 35px;
+	font-size: 15px;
+	color: rgb(255,255,255, 1);
+	margin: 0px;
+	opacity: 100% !important;
+}
+
+.choice-btn {
+	text-align: center;
+}
+
+.like {
+	position: absolute;
+  	bottom: 41px;
+  	left: 42px;
+  	border: 2px solid;
+  	border-radius: 10px 0 0 10px;
+  	font-size: 14px;
+  	padding-top: 2px;
+  	padding-bottom: 2px;
+  	padding-right: 2px;
+  	padding-left: 5px;
+  	background-color: #ffbfc0;
+  	color: black;
+}
+
+.dont-like {
+	position: absolute;
+  	bottom: 41px;
+  	right: 42px;
+  	border: 2px solid;
+  	border-radius: 0 10px 10px 0;
+  	font-size: 14px;
+  	padding-top: 2px;
+  	padding-bottom: 2px;
+  	padding-left: 2px;
+  	padding-right: 5px;
+  	background-color: #cfcfcf;
+  	color: black;
+}
+
+#top-news {	
+    align-items: center;
+    justify-content:center;
+    display: flex;
+}
+
+#top-access-news {	
+    align-items: center;
+    justify-content:center;
+}
+
+#ads-patern {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+ul {
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+li:hover {
+	background-color: transparent; 
+}
+
+#top-access-news li {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.access-news {
+	width: 50px;
+	height: 50px;
+}
+
+.list-suggest-news {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.suggest-news {
+	width: 80px;
+}
+
+.sub-news {
+	padding-left: 5px;
+}
+
+.row {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+p {
+	color: grey;
+}
+
+.comment_1 {
+	color: yellow;
+}
+
+.comment_2 {
+	color: pink;
+	/*animation: blinker 1s linear infinite;*/
+	animation-name: example;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {color: #fd566c;}
+    50%  {color: pink;}
+    100% {color: #fd566c;}
+}
+
+.row:before, .row:after {display: none !important;}

@@ -1,0 +1,72 @@
+// Extra small devices (portrait phones, less than 576px)
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+.container {
+	background-color: #f7f7f7;
+}
+
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3',Hiragino Kaku Gothic Pro,"メイリオ",Meiryo,Osaka,'ＭＳ Ｐゴシック',MS PGothic,sans-serif;
+}
+
+#top-news {	
+    align-items: center;
+    justify-content:center;
+    display: flex;
+}
+
+ul {
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+li:hover {
+	background-color: transparent; 
+}
+
+.suggest-news {
+	width: 80px;
+}
+
+.list-suggest-news {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.access-news {
+	width: 60px;
+}
+h6, p {
+	padding-left: 15px;
+}
+
+.short-paragraph {
+	color: grey;
+	word-wrap: break-word;
+}
+
+.header .container {
+	margin-top: 15px;
+}
+
+.header .container img {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.line-break {
+  width: 100%;
+}
