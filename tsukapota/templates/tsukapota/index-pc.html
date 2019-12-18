@@ -1,7 +1,7 @@
 {% load static %}
 
 <html>
-<header>
+<head>
 	<title>Ads test</title>
 	<link rel="shortcut icon" href="{% static 'tsukapota/image/favicon.ico' type='image/x-icon' %}">
 	<!-- Required meta tags -->
@@ -14,19 +14,19 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'tsukapota/css/patern1-frame.css' %}">
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript"> 
-   		var salesSen1 = "{{salesComment2.0.0}}",
-   			salesSen2 = "{{salesComment2.1.0}}",
-   			salesSen3 = "{{salesComment2.2.0}}",
-   			salesSen4 = "{{salesComment2.3.0}}",
-   			salesSen5 = "{{salesComment2.4.0}}",
-   			sales2Sen1 = "{{salesComment1.0.0}}",
-   			station = "{{salesSentences.1}}",
-   			floor_plan = "{{salesSentences.3}}"
-   			property_category = "{{salesSentences.4}}";
-   			console.log(sales2Sen1);
+		var salesSen1 = "{{salesComment2.0.0}}",
+		salesSen2 = "{{salesComment2.1.0}}",
+		salesSen3 = "{{salesComment2.2.0}}",
+		salesSen4 = "{{salesComment2.3.0}}",
+		salesSen5 = "{{salesComment2.4.0}}",
+		sales2Sen1 = "{{salesComment1.0.0}}",
+		station = "{{salesSentences.1}}",
+		floor_plan = "{{salesSentences.3}}"
+		property_category = "{{salesSentences.4}}";
+		console.log(sales2Sen1);
 	</script>
 	<script type="text/javascript" src="{% static 'tsukapota/js/ads-frame.js' %}"></script>
-</header>
+</head>
 <body>
 	<div class="header" style="display: inline !important;">
 		<div class="container">
@@ -216,13 +216,13 @@
 									気づいてました？
 									<br>
 									この
-										<span class="comment_1">
+									<span class="comment_1">
 										{{ salesSentences.1 }} 
 										{{ salesSentences.2|floatformat }}万円の
 										{{ salesSentences.3 }}
-										{{ salesSentences.4 }}</span>
-										、
-										<span class="comment_2">{{ salesSentences.5 }}</span>
+									{{ salesSentences.4 }}</span>
+									、
+									<span class="comment_2">{{ salesSentences.5 }}</span>
 								が魅力なこと。</p>
 								<div class="test-ads-logo">
 									<img src="{% static 'tsukapota/image/logo.png' %}">
