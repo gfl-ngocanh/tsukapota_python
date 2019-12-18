@@ -48,8 +48,18 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.RemoteUserMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_sample.basicAu.BasicAuthenticationMiddleware',
+]
+
+BASIC_WWW_AUTHENTICATION = True
+BASIC_WWW_AUTHENTICATION_USERNAME = "gfl"
+BASIC_WWW_AUTHENTICATION_PASSWORD = "123456"
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.RemoteUserBackend',
 ]
 
 ROOT_URLCONF = 'django_sample.urls'
